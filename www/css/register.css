@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+
+
+header{
+    height: 110px;
+    background: url("../img/headbg.jpg") repeat-x left bottom;
+}
+
+footer{
+    width: 990px;
+    margin: 0 auto;
+}
+
+footer section{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer section ul {
+    padding: 10px;
+}
+
+footer section ul li {
+    /* float: left; */
+    display: inline-block;
+    margin-left: 10px;
+}
