@@ -1,35 +1,262 @@
-* {
-    padding: 0;
+html, body {
+    width: 100%;
     margin: 0;
+    padding: 0;
     border: 0;
-    text-decoration: none;
-    list-style: none;
-    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
 }
 
-
-header{
-    height: 110px;
-    background: url("../img/headbg.jpg") repeat-x left bottom;
+em {
+    font-style: normal;
 }
 
-footer{
-    width: 990px;
+/* header */
+
+header {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px #f4f4f4;
+}
+
+nav {
+    width: 60%;
+    height: 120px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
-footer section{
-    padding-top: 20px;
+.logo {
+    float: left;
+    margin-top: 30px;
+}
+
+nav>h2 {
+    margin: 0;
+    float: left;
+    line-height: 150px;
+    font-weight: 100;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.qusnaire {
+    line-height: 152px;
+    float: right;
+    color: #333;
+}
+
+.qusnaire em {
+    color: #e22;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.headerbox {
+    width: 450px;
+    height: 480px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
     text-align: center;
-    padding-bottom: 20px;
+    line-height: 30px;
 }
 
-footer section ul {
-    padding: 10px;
+.stepline {
+    width: 135px;
+    height: 10px;
+    background-image: url(../img/reg-icon.png);
+    background-position: 0 -100px;
 }
 
-footer section ul li {
-    /* float: left; */
-    display: inline-block;
-    margin-left: 10px;
+.step {
+    margin: 15px 0 0 0;
+    /* padding: 15px; */
+}
+
+.step:nth-of-type(1) {
+    color: #3b4;
+}
+
+.step:nth-of-type(1) div {
+    border-color: #3b4;
+    background-color: #3b4;
+    color: #fff;
+}
+
+.step div {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin: 15px auto;
+}
+
+/* form */
+
+form {
+    width: 100%;
+}
+
+form > div{
+    position: relative;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 8px;
+    outline: none;
+    box-sizing: border-box;
+    margin: 15px 0;
+    line-height: 35px;
+    outline: none;
+    border: 1px solid rgb(161, 158, 158);
+}
+
+input[type=button] {
+    background-color: #fff;
+    border: 1px solid rgb(161, 158, 158);
+}
+
+input[type=text]:hover {
+    border: 1px solid #333;
+}
+
+input[type=button]:hover {
+    border: 1px solid #333;
+}
+
+input[type=submit] {
+    background-color: #e22;
+    border: none;
+    color: #fff;
+}
+
+/* form 表单的输入提示 */
+
+.tips {
+    font-size: 10px;
+    margin: 0px;
+    line-height: 10px;
+    display: none;
+    position: absolute;
+    bottom: -3px;
+}
+
+.tips img {
+    vertical-align: middle;
+}
+
+/*  */
+
+.footer_link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link div {
+    background-image: url(../img/reg-icon.png);
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.footer_link div:nth-of-type(1) {
+    background-position: 4px -161px;
+}
+
+.footer_link span:nth-of-type(2) div {
+    background-position: -35px -161px;
+}
+
+.footer_link em {
+    display: block;
+    float: left;
+}
+
+/* footer */
+
+footer {
+    padding: 15px;
+}
+
+.linklist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #999;
+    min-width: 650px;
+}
+
+.linklist li:hover {
+    color: #A90B19;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+/* 第二个注册页面 */
+.infoform{
+    overflow: hidden;
+}
+.infoform div{
+    position: relative;
+}
+
+.infoform input{
+    padding-left: 100px;
+}
+
+.infoform label{
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    left: 12px;
+}
+.footer{
+    margin-top: 180px;
+}
+.steps2{
+    color: #3b4;
+}
+.step2{
+    background-color: #3b4;
+    border: 1px solid #3b4 !important;
+    color: #fff;
+}
+.submitbtn{
+    padding-left: 0px !important;
+}
+/* 注册成功页面 */
+.stepall > div{
+    color: #3b4;
+}
+
+.stepall > .step > div{
+    border-color: #3b4;
+    background-color: #3b4;
+    color: #fff;
+}
+.createend{
+    text-align: center;
+    margin: 80px 0;
 }

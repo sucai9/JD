@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,87 @@
     <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="css/register.css">
 </head>
-<body> 
-    
-             
-     <footer>
-        <section>
-            <ul>
-                <li>关于我们</li>&#x3000;|
-                <li>联系我们</li>&#x3000;|
-                <li>人才招聘</li>&#x3000;|
-                <li>商家入驻</li>&#x3000;|
-                <li>广告服务</li>&#x3000;|
-                <li>手机京东</li>&#x3000;|
-                <li>友情链接</li>&#x3000;|
-                <li>销售联盟</li>&#x3000;|
-                <li>京东社区</li>&#x3000;|
-                <li>京东公益</li>&#x3000;|
-                <li>English site</li>
-            </ul>
-            <div>Copyright © 2004-2018 京东JD.com 版权所有 </div>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo.png" alt="logo">
+            <h2>欢迎注册</h2>
+            <span class="qusnaire">
+                <span>已有账号?
+                    <a style="text-decoration:none" href="login.html">
+                        <em>请登陆></em>
+                    </a>
+                </span>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section class="headerbox">
+            <div class="steps">
+                <div class="step steps2">
+                    <div class="step2">1</div>
+                    <span>填写账号信息</span>
+                </div>
+                <div class="stepline"></div>
+                <div class="step">
+                    <div>2</div>
+                    <span>注册成功</span>
+                </div>
+            </div>
+            <form action="" class="infoform">
+                <div>
+                    <label for="user">用户名</label>
+                    <input autocomplete="off" type="text" name="petname" id="user" placeholder="用户名" required
+                        pattern="^[\u4e00-\u9fa5]{2,6}$">
+                    <p class="tips"> <img src="./img/icon-tips.png" alt=""> 验证完成后，可以使用该手机登录或者找回密码</p>
+                </div>
+                <div>
+                    <label for="pwd">设置密码</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="建议使用两种或两种以上的字符组合" required pattern="\w{6,16}">
+                </div>
+                <div>
+                    <label for="pwd2">确认密码</label>
+                    <input type="password" name="pwd2" id="pwd2" placeholder="请再次输入密码" required pattern="\w{6,16}">
+                </div>
+                <div>
+                    <input class="submitbtn" type="submit" value="立即注册">
+                </div>
+            </form>
+            <div class="content_footer">
+                <div class="footer_link">
+                    <span>
+                        <div></div><em>企业用户注册</em>
+                    </span>
+                    <span>
+                        <div></div><em>国际站注册</em>
+                    </span>
+                </div>
+            </div>
         </section>
+    </main>
+    <footer class="footer">
+        <ul class="linklist">
+            <li>关于我们</li>|
+            <li>联系我们</li>|
+            <li>人才招聘</li>|
+            <li>商家入驻</li>|
+            <li>广告服务</li>|
+            <li>手机京东</li>|
+            <li>友情链接</li>|
+            <li>销售联盟</li>|
+            <li>京东社区</li>|
+            <li>京东公益</li>|
+            <li>English Site</li>
+        </ul>
+        <p>Copyright © 2004-2018 京东JD.com 版权所有</p>
     </footer>
+
+    <script src="jquery/jquery-3.3.1.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+    </script>
 </body>
+
 </html>

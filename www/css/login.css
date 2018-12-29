@@ -1,86 +1,319 @@
-* {
-    padding: 0;
+html, body {
+    width: 100%;
     margin: 0;
+    padding: 0;
     border: 0;
-    text-decoration: none;
-    list-style: none;
-    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
 }
 
+/* header */
 
 header {
-    width: 990px;
+    width: 100%;
+}
+
+nav {
+    width: 60%;
+    height: 120px;
     margin: 0 auto;
-    height: 80px
+    overflow: hidden;
 }
 
-header .left{
-    position: relative;
-    width: 310px;
-    height: 60px;
-    margin: 10px auto;
+.logo {
     float: left;
-}
-header .left img:nth-of-type(1){
-    width: 170px;
-    height: 60px;
-    background-repeat: no-repeat;
-}
-header .left img:nth-of-type(2){
-    display: block;
-    width: 110px;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
+    margin-top: 30px;
 }
 
-header .right {
-    position: relative;
-    color: #999999;
+nav>h2 {
+    margin: 0;
+    float: left;
+    line-height: 150px;
+    font-weight: 100;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.qusnaire {
+    line-height: 152px;
     float: right;
-    top: 52px;
-}
-header .right img {
-    display: inline-block;
-    width: 18px;
-    height: 14px;
-    margin: 0 5px;
-    background-repeat: no-repeat;
 }
 
-main{
-    position: relative;
+.tips {
+    background-color: #fff8f0;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tips b {
+    color: #333;
+}
+
+/* main */
+
+main {
+    width: 100%;
     height: 475px;
     background-color: #121212;
 }
 
-
-main .bgimg{
+.contentbox {
     width: 990px;
+    height: 475px;
+    background-image: url("../img/84bec959e9230cde.jpg");
     margin: 0 auto;
-}
-
-
-footer{
-    width: 990px;
-    margin: 0 auto;
-}
-
-footer section{
-    padding-top: 20px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-footer section ul {
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-footer section ul li {
-    /* float: left; */
+.loginbox {
+    width: 348px;
+    /* height: 428px; */
+    background-color:#fff;
+    float: right;
+}
+
+.loginsel {
+    width: 100%;
+    height: 61px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.loginsel span {
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.loginsel span:hover {
+    font-weight: 700;
+    color: #e4393c;
+}
+
+.loginsel span:nth-of-type(1) {
+    border-right: 1px solid #f5f5f5;
+}
+
+.icon_footer {
     display: inline-block;
-    margin-left: 10px;
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/QQ-weixin.png);
+    margin: 5px;
+    vertical-align: middle;
 }
 
+.loginfooter {
+    padding: 10px 0;
+    border-top: 1px solid #f4f4f4;
+}
+
+.loginfooter>span {
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.loginfooter span:nth-of-type(2) div.icon_footer {
+    background-position: 20px 0;
+}
+
+.loginfooter span:nth-of-type(2) {
+    border-left: 1px solid gray;
+}
+
+.reg {
+    margin-left: 25px;
+    color: #A90B19;
+}
+
+.reg a {
+    color: #A90B19;
+    text-decoration: none;
+}
+
+.reg a:hover {
+    text-decoration: underline;
+}
+
+.reg_img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    background-image: url(../img/pwd-icons-new.png);
+    background-position: 17px -74px;
+}
+
+/* 登录框 */
+
+.qrtips {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+}
+
+.qrcodelogin {
+    display: none;
+    /* height: 200px; */
+}
+
+.logincontent {
+    text-align: center;
+}
+
+.qrcodebox {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.qrcode {
+    transition: all 0.4s;
+}
+
+.qrcodebox:hover .qrcode {
+    transform: translate(-60px, 0)
+}
+
+/* 账户登陆 */
+
+form > div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.cnm{
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    width: 304px;
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 6;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+form > div input{
+    line-height: 18px;
+    height: 18px;
+    border: 0;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '\5b8b\4f53';
+    /* text-align: center; */
+}
+
+form span{
+    font-size: 12px;
+    float: right;
+    padding: 10px 0;
+    /* font-family: 'Microsoft YaHei'; */
+
+}
+
+input[type=submit]{
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid #e85356;
+    display: block;
+    width: 100%;
+    background-color: #e4393c;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Microsoft YaHei';
+}
+
+form > div > label{
+    background-image: url(../img/pwd-icons-new.png);
+    background-position: 0 0;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    float: none;
+    font-size: 12px;
+}
+
+form > div:nth-of-type(2) > label{
+    background-position-x: 72px;
+}
+
+.more{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.more span{
+    display: inline-block;
+    width: 27px;
+    height: 25px;
+    background-image: url(../img/qr-coagent.png);
+    margin-bottom: 15px;
+    float: left;
+}
+
+.more em{
+    font-style: normal;
+    float: left;
+}
+
+/* footer */
+
+footer {
+    padding: 15px;
+}
+
+.linklist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #999;
+    min-width: 650px;
+}
+
+.linklist li:hover {
+    color: #A90B19;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.active{
+    color: #A90B19;
+}
